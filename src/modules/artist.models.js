@@ -13,9 +13,21 @@ const artisSchema = new Schema(
     nationality: {
       type: String,
     },
-    user: {
-      type: String,
-      require: true,
+    //Propiedad embebida
+    socialMedia: {
+      instagram: {
+        type: String,
+        require: true,
+      },
+      youtube: {
+        type: String,
+        require: true,
+      },
+      spotify: {
+        type: String,
+        require: true,
+      },
+
     },
   },
   {
