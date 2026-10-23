@@ -26,7 +26,7 @@ export const createMusic = async (req, res) => {
 
 export const getAllMusic = async (req, res) => {
   try {
-    const music = await MusicModel.find().populate("artist");
+    const music = await MusicModel.find().populate("artist")
 
     return res.status(200).json({
       msg: "Se encontraron las canciones correctamente",
